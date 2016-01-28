@@ -1,1 +1,4 @@
-<li class="item">{{ vm.item.name }}</li>
+<li class="item" ng-class="{'item--active': vm.isActive()}" ng-click="vm.select()">
+  <div class="item__name">{{ vm.item.name }}</div>
+  <div class="item__description">{{ vm.item.description }}</div>
+</li>

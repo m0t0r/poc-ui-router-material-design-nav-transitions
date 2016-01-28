@@ -3,4 +3,42 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.items {
+  border: 1px solid #aaa;
+  width: 400px;
+  padding: 5px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.item {
+  display: block;
+  list-style: none;
+  padding: 24px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.item.item--active {
+  background: salmon;
+}
+
+.item__name {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.item:not(:first-child) {
+  margin-top: 15px;
 }
